@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu JConnections</title>
+
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="menu.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Lora|Pacifico" rel="stylesheet">
+
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script type="text/javascript">
+  function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+       
+
+
+<body>
+
+<!-- HEADER -->
+<header>
+	<nav class="navbar navbar-default navbar-fixed-top">
+    	<div class="container">
+    	
+			<!-- LOGO AND BURGER-->
+			<div class="navbar-header">
+				<span id=logo><a href="homepage.html">JConnections<img src="leaf.png" alt="logo"></a></span>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+	      
+			<!-- RIGHT HAND MENU -->
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="menu.html" target="block">MENU</a></li>
+					<li><a href="service.html" target="block">CATERING SERVICES</a></li>
+					<li><a href="contact.html" target="block">CONTACT</a></li>
+					<li><a href="menu.html" target="block">ORDER NOW</a></li>
+				</ul>
+			</div>
+
+    	</div>
+  	</nav>
+</header>
+
+
+
+<div class="container">
+	<div class="row">
+
+		<!-- SIDEBAR -->
+		<div class="col-md-2">
+			<div class="sidebar">
+				<h3>Catering Menu</h3>
+				<ul type="none" class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+					<li><a href="#breakfast"><h4>Breakfast</h4></a></li>
+					<li><a href="#lunch"><h4>Lunches</h4></a></li>
+					<li><a href="#salad"><h4>Salads</h4></a></li>
+					<li><a href="#dessert"><h4>Desserts</h4></a></li>
+				</ul>
+			</div>
+
+			<div class="topbar-hidden">
+				<h3>Catering Menu</h3>
+				<ul type="none">
+					<li><a href="#breakfast"><h4>Breakfast</h4></a></li>
+					<li><a href="#lunch"><h4>Lunches</h4></a></li>
+					<li><a href="#salad"><h4>Salads</h4></a></li>
+					<li><a href="#dessert"><h4>Desserts</h4></a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!-- MENU -->
+		<div class="col-md-10">
+			<div class="menu">
+			
+				<!-- BREAKFAST -->
+				<h1 id="breakfast">Breakfast</h1>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="menu/breakfast1.jpg" alt="breakfast1" class="img-thumbnail">
+						<h3>Lumberjack Breakfast</h3>
+						&#8369 125.00
+						<p>With 3 extra large farm-fresh eggs (your way) and choices of applewood-smoked bacon or sausage, plus 3 buttermilk pancakes or slices of Brioche french toast.</p>
+						<button>ADD TO ORDER</button>
+					</div>
+
+					<div class="col-md-4">
+						<img src="menu/breakfast2.jpg" alt="breakfast2" class="img-thumbnail">
+						<h3>Israeli Breakfast</h3>
+						&#8369 125.00
+						<p>Fresh bread, a variety of hard and soft cheeses, fresh juice, olives, jam and butter are all regulars on the Israeli breakfast plate.</p>
+						<button>ADD TO ORDER</button>
+					</div>
+
+					<div class="col-md-4">
+						<img src="menu/breakfast3.jpg" alt="breakfast3" class="img-thumbnail">
+						<h3>Polish Breakfast</h3>
+						&#8369 125.00
+						<p>Traditional Polish breakfast consists of scrambled eggs covered with slices of custom-made kielbasa and joined by two potato pancakes.</p>
+						<button>ADD TO ORDER</button>
+					</div>
+				</div>
+
+				<!-- LUNCH -->
+				<h1 id="lunch">Lunches</h1>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="menu/lunch1.jpg" alt="lunch1" class="img-thumbnail">
+						<h3>Country House Salad with Grilled Chicken</h3>
+						&#8369 125.00
+						<p>Country House Salad with grilled chicken and lots of fixin’s. Served with your choice of dressing and either a Baked Sweet Potato or Baked Potato or a Cup of Soup.</p>
+						<button>ADD TO ORDER</button>
+					</div>
+
+					<div class="col-md-4">
+						<img src="menu/lunch2.jpg" alt="lunch2" class="img-thumbnail">
+						<h3>Grilled Pork Chops</h3>
+						&#8369 125.00
+						<p>Two bone-in Grilled Country Pork Chops with choice of two Country Vegetables plus made-from-scratch Buttermilk Biscuits or Corn Muffins.</p>
+						<button>ADD TO ORDER</button>					
+					</div>
+
+					<div class="col-md-4">
+						<img src="menu/lunch3.jpg" alt="lunch3" class="img-thumbnail">
+						<h3>Fish Fry</h3>
+						&#8369 125.00
+						<p>Four Cod fillets, hand-dipped in our own special batter and fried. We suggest enjoying them with Homestyle Fries and Cole Slaw.</p>
+						<button>ADD TO ORDER</button>					
+					</div>
+				</div>
+
+				<!-- SALAD -->
+				<h1 id="salad">Salads</h1>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="menu/salad1.jpeg" alt="salad1" class="img-thumbnail">
+						<h3>Chicken Schnitzel Caesar Salad</h3>
+						&#8369 95.00
+						<p>Crunchy, munchy schnitzel and creamy, crispy caesar salad, a dynamite duo joining forces to bring you summer deliciousness.</p>
+						<button>ADD TO ORDER</button>					
+					</div>
+
+					<div class="col-md-4">
+						<img src="menu/salad2.jpg" alt="salad2" class="img-thumbnail">
+						<h3>Fruit Salad</h3>
+						&#8369 95.00
+						<p>Combining several types of fruits, are rich in antioxidants and low in calories.</p>
+						<button>ADD TO ORDER</button>					
+					</div>
+
+					<div class="col-md-4">
+						<img src="menu/salad3.jpg" alt="salad3" class="img-thumbnail">
+						<h3>Caprese Pasta Salad with Artichokes and Olives</h3>
+						&#8369 95.00
+						<p>Made with summers own peak-season, sweet and juicy heirloom cherry tomatoes, in an array of colors. Plenty of fragrant basil, caprese, fresh mozzarella with Mediterranean twist.</p>
+						<button>ADD TO ORDER</button>					
+					</div>
+				</div>
+
+				<!-- DESSERT -->
+				<h1 id="dessert">Desserts</h1>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="menu/dessert1.jpg" alt="dessert1" class="img-thumbnail">
+						<h3>Apple Cider Churros with Salted Caramel Sauce</h3>
+						&#8369 85.00
+						<p>Pillowy clouds of fried goodness. If you’re a fan of caramel apples, you’re sure to “fall” in love with these treats – especially the ooey-gooey salted caramel sauce!</p>
+						<button>ADD TO ORDER</button>					
+					</div>
+
+					<div class="col-md-4">
+						<img src="menu/dessert2.jpg" alt="dessert2" class="img-thumbnail">
+						<h3>Strawberry Sorbet Sensation</h3>
+						&#8369 85.00
+						<p>Chill out with slices of this berries-and-cream dessert. The layered effect is so much fun. Your choice of sorbet flavor.</p>
+						<button>ADD TO ORDER</button>					
+					</div>
+
+					<div class="col-md-4">
+						<img src="menu/dessert3.jpg" alt="dessert3" class="img-thumbnail">
+						<h3>Vegan Chocolate-Peanut Butter Pudding</h3>
+						&#8369 85.00
+						<p>Vegan chocolate-peanut butter pudding cups! So creamy. Uses avocado instead of eggs and dairy.</p>
+						<button>ADD TO ORDER</button>					
+					</div>
+				</div>
+
+				<!-- FOOTER -->
+				<footer>
+					<div>
+					Disclaimer: Images and content are not mine. Credits to owner.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<img src="icon/facebook.png" alt="facebook" class="icon">
+					<img src="icon/twitter.png" alt="twitter" class="icon">
+					<img src="icon/instagram.png" alt="instagram" class="icon">
+					<img src="icon/pinterest.png" alt="pinterest" class="icon">
+					<img src="icon/google.png" alt="google"class="icon">
+					</div>
+				</footer>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+	
+
+</body>
+</html>  

@@ -1,0 +1,132 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/*HEADER*/
+.navbar {
+	background-color: white;
+}
+
+.navbar-header {
+	padding: 10px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	text-decoration: underline;
+	color:  #7ab829;
+}
+
+.navbar-default .navbar-toggle {
+	width: 50px;
+	height: 50px;
+	border: none;
+	margin: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  	background-color: #7ab829;
+}
+
+header {
+  	width: 100%;
+  	height: 40px;
+  	transition: height 0.3s; 
+}
+
+header #logo>a {
+	font-size: 36px;
+    transition: all 0.3s; 
+    color: #7ab829;
+    font-family: 'Pacifico', cursive;
+}
+
+header #logo>a:hover {
+	text-decoration: none;
+	color:  #7ab829;
+}
+
+header #logo>a:focus {
+	text-decoration: none;
+	color:  #7ab829;
+}
+  
+header .navbar-default .navbar-nav>li>a {
+	line-height: 40px;
+  	transition: all 0.3s; 
+} 
+
+header.smaller {
+	height: 30px; 
+}
+
+header.smaller #logo>a {
+  	font-size: 24px;
+}
+
+header.smaller img {
+  	width: 30px;
+  	height: 30px;
+}
+
+header.smaller .navbar-default .navbar-nav>li>a {
+  	line-height: 30px; 
+}
+
+
+/*MAIN*/
+.intro {
+	text-align: center;
+}
+
+.form {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+textarea {
+	resize: none;
+}
+
+h1 {
+	font-family: 'Lora', serif;
+}
+
+h2,
+h3 {
+	color: #7ab829;
+}
+
+
+/*BUTTON*/
+button {
+	color: white;
+	font-size: 1.2em;
+	background-color: #7ab829;
+	padding: 10px 50px;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 50px;
+	box-sizing: border-box;
+	border: none;
+}
+
+
+/*MAP*/
+iframe {
+	border: none;
+}
+
+
+/*FOOTER*/
+.icon {
+	width: 30px;
+	height: 30px;
+}
+
+footer {
+	background: white;
+	height: 50px;
+	text-align: center;
+	margin-top: 100px;
+}

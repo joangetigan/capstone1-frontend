@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact JConnections</title>
+
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="contact.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Lora|Pacifico" rel="stylesheet">
+
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script type="text/javascript">
+  function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+
+
+
+<body>
+<!-- HEADER -->
+<header>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	    <div class="container">
+	    	
+			<!-- LOGO AND BURGER-->
+			<div class="navbar-header">
+				<span id=logo><a href="homepage.html">JConnections<img src="leaf.png" alt="logo"></a></span>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- RIGHT HAND MENU -->
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="menu.html" target="block">MENU</a></li>
+					<li><a href="service.html" target="block">CATERING SERVICES</a></li>
+					<li><a href="contact.html" target="block">CONTACT</a></li>
+					<li><a href="menu.html" target="block">ORDER NOW</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+</header>
+
+
+
+<div class="container form">
+	<div class="row">
+		<div class="col-md-2"></div>
+
+		<div class="col-md-8">
+			<div class="intro">
+				<h1>Contact Us</h1>
+				<p>We’re here to help make your event easier. Whether you’ve got questions about placing an order, creating a menu for your event or just need help getting started, we’re here to help. Fill out the form below and someone from our office will be in touch.</p>
+				<h2>02-282-9520</h2><br>
+			</div>
+			
+			<h2>Basic Information</h2><br>
+			<div class="form-group">
+				<label>FULL NAME *</label>
+				<input type="text" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label>COMPANY</label>
+				<input type="text" class="form-control">
+			</div>
+
+			<div class="row">
+				<div class="form-group col-md-6">
+					<label>EMAIL *</label>
+					<input type="text" class="form-control">
+				</div>
+
+				<div class="form-group col-md-6">
+					<label>PHONE</label>
+					<input type="text" class="form-control">
+				</div>
+			</div>
+				
+			<div class="form-group">
+				<textarea rows="10" cols="100" class="form-control" placeholder="MESSAGE"></textarea>
+			</div><br>
+
+			<hr><br>
+
+			<h2>Event Details</h2>
+			Fill in the following fields to the best of your ability. The more information you can provide the better.<br><br>
+
+			<div class="form-group">
+				<label>LOCATION</label>
+				<textarea rows="10" cols="100" class="form-control" placeholder="Please provide the name of the location and address"></textarea>
+			</div><br>
+
+			<div>
+				<label>EVENT DATE</label><br>
+				<select>
+					<option>January</option>
+					<option>February</option>
+					<option>March</option>
+					<option>April</option>
+					<option>May</option>
+					<option>June</option>
+					<option>July</option>
+					<option>August</option>
+					<option>September</option>
+					<option>October</option>
+					<option>November</option>
+					<option>December</option>
+				</select>&nbsp&nbsp&nbsp
+
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+				</select>&nbsp&nbsp&nbsp
+
+				<select>
+					<option>2017</option>
+					<option>2018</option>
+				</select>
+			</div><br>
+
+			<div>
+				<select>
+					<option>Choose an event type</option>
+					<option>Corporate</option>
+					<option>Wedding</option>
+					<option>Special Event</option>
+				</select>                                
+			</div><br><br>
+																					
+			<button>SUBMIT</button>
+
+			<div class="row">
+				<div class="col-md-3">
+					<h3>ADDRESS</h3>
+					2nd Floor Caswynn Building<br>
+					#134 Timog Ave, Sacred Heart,
+					Quezon City<br><br>
+					02-282-9520
+					order@jcatering.com
+				</div>
+				<div class="col-md-4">
+					<h3>HOURS</h3>
+					Monday–Friday<br>
+					6:00 a.m. – 5:30 p.m.<br><br>
+					Saturday<br> 
+					6:00 a.m. – 4:00 p.m.<br><br>
+					Sunday<br>
+					By special arrangement only
+				</div><br>
+				<div class="col-md-5">
+					<iframe src="https://www.google.com/maps/embed/v1/place?q=Caswynn+Building,+134+Timog+Ave,+Diliman,+Quezon+City,+Metro+Manila&zoom=18&key=AIzaSyD3cx_quY_jrw3pQGU_OB0MQd8GwtlNDlA"></iframe>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-2"></div>
+
+	</div>
+</div>
+
+
+
+<!-- FOOTER -->
+<footer>
+	<img src="icon/facebook.png" alt="facebook" class="icon">
+	<img src="icon/twitter.png" alt="twitter" class="icon">
+	<img src="icon/instagram.png" alt="instagram" class="icon">
+	<img src="icon/pinterest.png" alt="pinterest" class="icon">
+	<img src="icon/google.png" alt="google"class="icon">
+</footer>
+
+
+
+</body>
+</html>  

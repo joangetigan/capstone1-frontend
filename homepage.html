@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JConnections Catering</title>
+
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="homepage.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Lora|Pacifico" rel="stylesheet">
+
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script type="text/javascript">
+  function init() {
+		window.addEventListener('scroll', function(e){
+			var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+				shrinkOn = 300,
+				header = document.querySelector("header");
+			if (distanceY > shrinkOn) {
+				classie.add(header,"smaller");
+			} else {
+				if (classie.has(header,"smaller")) {
+					classie.remove(header,"smaller");
+				}
+			}
+		});
+	}
+	window.onload = init();
+</script>
+</head>
+	   
+			
+
+<body>
+
+<!-- HEADER -->
+<header>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+		
+			<!-- LOGO AND BURGER-->
+			<div class="navbar-header">
+				<span id=logo><a href="homepage.html">JConnections<img src="leaf.png" alt="logo"></a></span>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+	  
+			<!-- RIGHT HAND MENU -->
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="menu.html" target="block">MENU</a></li>
+					<li><a href="service.html" target="block">CATERING SERVICES</a></li>
+					<li><a href="contact.html" target="block">CONTACT</a></li>
+					<li><a href="menu.html" target="block">ORDER NOW</a></li>
+				</ul>
+			</div>
+
+		</div>
+  	</nav>
+</header>
+
+
+
+<div class="container">
+  	<!-- FOUR THUMBNAILS -->
+  	<div class="thumbnail" id="fadeshow">
+		<div class="row">
+			<div>
+				<p class="title">Only the Freshest Ingredients</p>
+			</div>
+
+			<div class="col-md-3 img-responsive img-thumbnail thumb1">
+				<img src="homepage/thumb1.jpg" alt="thumb1">
+			</div>
+
+			<div class="col-md-3 img-responsive img-thumbnail thumb2">
+				<img src="homepage/thumb2.jpg" alt="thumb2">
+			</div>
+
+			<div class="col-md-3 img-responsive img-thumbnail thumb3">
+				<img src="homepage/thumb3.jpeg" alt="thumb3">
+			</div>
+
+			<div class="col-md-3 img-responsive img-thumbnail thumb4">
+				<img src="homepage/thumb4.jpeg" alt="thumb4">
+			</div>
+		</div>
+  	</div><br>
+
+
+
+	<!-- TEXTS -->
+	<h1 id="hidden">Only the Freshest Ingredients</h1>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<h2 class="intro">Eating should be an experience</h2>
+			<p>At JConnections catering we know that food is an important part of life. If the meal is not perfect, your event cannot be perfect. We know that it is critical for your food to arrive on time, to be presented beautifully, and to be delicious.</p>
+		</div>
+		<div class="col-md-2"></div>
+	</div><br><br><br><br><br>
+
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-3 text">
+			<h2>Commitment to Freshness</h2>
+			<p>We pride ourselves on our commitment to freshness by using locally sourced food that never contains any preservatives or additives. Our chefs chop and prepare food fresh each morning, never the day before.</p>
+		</div>
+		<div class="col-md-7">
+			<img src="homepage/freshness.jpeg" alt="freshness" class="img-responsive">
+		</div>
+	</div><br>
+
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-6">
+			<img src="homepage/quality.jpeg" alt="quality" class="img-responsive">
+		</div>
+		<div class="col-md-3 text">
+			<h2>Commitment to Quality</h2>
+			<p>We never compromise quality - it's the secret to our success. Even during the lean years, we continued to use the "best of the best" to give you our best. We are 100% committed to quality service.</p>
+		</div>
+	</div><br>
+
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-3 text">
+			<h2>Commitment to Passion</h2>
+			<p>We have a passion for food, we're all foodaholics. Our heart and soul goes into everything we do. The food business is our life and we bring that passion to our food.</p>
+		</div>
+		<div class="col-md-7">
+			<img src="homepage/passion.jpg" alt="passion" class="img-responsive">
+		</div>
+	</div><br><br><br><br><br>
+
+
+
+	<!-- TESTIMONIALS -->
+	<div class="row">
+		<div class="col-md-3"></div>
+
+		<div class="col-md-6">
+			<blockquote>
+				My goodness they are spectacular. We have two different events using them this week and each time I was wowed.<br>
+				<span class="client">Gean B</span>
+			</blockquote>
+
+			<blockquote>
+				JConnections catered a work event today. This place is aptly named! Very high praises to the pasta salad as well, with it's fresh & crunchy red and green peppers, and cilantro for just the right zing.<br>
+				<span class="client">Shane L</span>
+			</blockquote>
+		</div>
+
+		<div class="col-md-3"></div>
+	</div><br><br>
+
+
+
+	<!-- BUTTON -->
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<a href="menu.html" target="block">
+				<button>VIEW OUR MENU</button>
+			</a>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+
+</div>
+
+
+
+<!-- FOOTER -->
+<footer>
+	<img src="icon/facebook.png" alt="facebook" class="icon">
+	<img src="icon/twitter.png" alt="twitter" class="icon">
+	<img src="icon/instagram.png" alt="instagram" class="icon">
+	<img src="icon/pinterest.png" alt="pinterest" class="icon">
+	<img src="icon/google.png" alt="google"class="icon">
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services JConnections</title>
+
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="service.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Lora|Pacifico" rel="stylesheet">
+
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script type="text/javascript">
+  function init() {
+		window.addEventListener('scroll', function(e){
+			var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+				shrinkOn = 300,
+				header = document.querySelector("header");
+			if (distanceY > shrinkOn) {
+				classie.add(header,"smaller");
+			} else {
+				if (classie.has(header,"smaller")) {
+					classie.remove(header,"smaller");
+				}
+			}
+		});
+	}
+	window.onload = init();
+</script>
+</head>
+
+
+
+<body>
+
+<!-- HEADER -->
+<header>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	    <div class="container">
+	    	
+			<!-- LOGO AND BURGER-->
+			<div class="navbar-header">
+				<span id=logo><a href="homepage.html">JConnections<img src="leaf.png" alt="logo"></a></span>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- RIGHT HAND MENU -->
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="menu.html" target="block">MENU</a></li>
+					<li><a href="service.html" target="block">CATERING SERVICES</a></li>
+					<li><a href="contact.html" target="block">CONTACT</a></li>
+					<li><a href="menu.html" target="block">ORDER NOW</a></li>
+				</ul>
+			</div>
+
+	    </div>
+  	</nav>
+</header>
+
+
+
+<div class="container">
+	<div class="row">
+
+		<!-- SIDEBAR -->
+		<div class="col-md-2">
+			<div class="sidebar">
+				<h3>Catering Services</h3>
+				<ul type="none" class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+					<li><a href="#corporate"><h4>Corporate Events</h4></a></li>
+					<li><a href="#wedding"><h4>Weddings</h4></a></li>
+					<li><a href="#special"><h4>Special Events</h4></a></li>
+				</ul>
+			</div>
+
+			<div class="topbar-hidden">
+				<h3>Catering Services</h3>
+				<ul type="none">
+					<li><a href=""><h4>Corporate Events</h4></a></li>
+					<li><a href="#wedding"><h4>Weddings</h4></a></li>
+					<li><a href="#special"><h4>Special Events</h4></a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!-- SERVICES -->
+		<div class="col-md-10">
+			<div class="service">
+
+				<!-- CORPORATE EVENTS -->
+				<h1 id="corporate">Corporate Events</h1>
+
+				<div class="row">
+					<div class="col-md-12">
+				  		<img src="service/corporate-main.jpg" alt="corporate-main" class="img-responsive">
+					</div>
+				</div><br>
+
+				<div class="row">
+					<div class="col-md-4">
+						<img src="service/corporate1.PNG" alt="corporate1" class="img-thumbnail">
+						<h4>Business Meetings</h4>
+						<p>Impress your clients at your next meeting. Let us take care of the food.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="service/corporate2.PNG" alt="corporate2" class="img-thumbnail">
+						<h4>Conferences</h4>
+						<p>Got a big conference or event coming up? Our staff will work with you on every detail.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="service/corporate3.PNG" alt="corporate3" class="img-thumbnail">
+						<h4>Luncheons</h4>
+						<p>We provide farm-fresh food that will keep you going throughout the day.</p>
+					</div>
+				</div><br>
+
+				<div class="row">
+					<div class="col-md-4">
+						<img src="service/corporate4.PNG" alt="corporate4" class="img-thumbnail">
+						<h4>Holiday Parties</h4>
+						<p>When the holiday season rolls around, JConnections is ready to impress with food fit for any celebration.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="service/corporate5.PNG" alt="corporate5" class="img-thumbnail">
+						<h4>Company Outings</h4>
+						<p>Whether it's a team building activity or company picnic, we'll take care of the details.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="service/corporate6.PNG" alt="corporate6" class="img-thumbnail">
+						<h4>Formal Events</h4>
+						<p>Hosting a gala or black tie event has never been easier. We do the hard work to ensure your event runs smoothly.</p>
+					</div>
+				</div><br><br>
+
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-3">
+						<a href="contact.html" target="block">
+							<button>REQUEST A QUOTE</button>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="menu.html" target="block">
+							<button>PLACE AN ORDER</button>
+						</a>
+					</div>
+					<div class="col-md-3"></div>
+				</div><br><br>
+
+
+				<!-- WEDDINGS -->
+				<h1 id="wedding">Weddings</h1>
+
+				<div class="row">
+					<div class="col-md-12">
+						<img src="service/wedding-main.jpg" alt="wedding-main" class="img-responsive">
+					</div>
+				</div><br>
+
+				<div class="row">
+					<div class="col-md-4">
+						<img src="service/wedding1.PNG" alt="wedding1" class="img-thumbnail">
+						<h4>Rentals</h4>
+						<p>From tables to chairs, to linens and china, we can help organize all of the rentals for your special day.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="service/wedding2.PNG" alt="wedding2" class="img-thumbnail">
+						<h4>Food & Beverage</h4>
+						<p>We have a wide selection of delicious menus, both custom and preset options. Let us worry about the food.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="service/wedding3.PNG" alt="wedding3" class="img-thumbnail">
+						<h4>Flowers</h4>
+						<p>Need flowers for your event? We work with local vendors to ensure that your floral needs are taken care of.</p>
+					</div>
+				</div><br>
+
+				<div class="row">
+					<div class="col-md-4">
+						<img src="service/wedding4.PNG" alt="wedding4" class="img-thumbnail">
+						<h4>Staff</h4>
+						<p>We’re here to make sure everything runs smoothly. Our experienced staff can take care of everything for you.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="service/wedding5.PNG" alt="wedding5" class="img-thumbnail">
+						<h4>Venues</h4>
+						<p>We team up with local vendors to offer you the very best in venues in the D.C. metro region.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="service/wedding6.PNG" alt="wedding6" class="img-thumbnail">
+						<h4>Planning</h4>
+						<p>Planning an event can be stressful. We’re here to take some of that stress away. Let us take care of the coordinating.</p>
+					</div>
+				</div><br><br>
+
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-3">
+						<a href="contact.html" target="block">
+							<button>REQUEST A QUOTE</button>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="menu.html" target="block">
+							<button>PLACE AN ORDER</button>
+						</a>
+					</div>
+					<div class="col-md-3"></div>
+				</div><br><br>
+
+
+				<!-- SPECIAL EVENTS -->
+				<h1 id="special">Special Events</h1>
+
+				<div class="row">
+					<div class="col-md-12">
+						<img src="service/event-main.jpg" alt="event-main" class="img-responsive">
+					</div>
+				</div><br>
+
+				<div class="row">
+					<div class="col-md-4">
+						<img src="service/event1.PNG" alt="event1" class="img-thumbnail">
+						<h4>Graduations</h4>
+						<p>Celebrate your hard work with friends, family, and farm-fresh food. We’ll take care of all the planning.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="service/event2.PNG" alt="event2" class="img-thumbnail">
+						<h4>Birthdays</h4>
+						<p>A birthday comes but once a year, so make the most of it with an unforgettable birthday bash!</p>
+					</div>
+					<div class="col-md-4">
+						<img src="service/event3.PNG" alt="event3" class="img-thumbnail">
+						<h4>Engagement Parties</h4>
+						<p>The question has finally been popped and now it’s time to celebrate before turning your attention to wedding planning.</p>
+					</div>
+				</div><br>
+
+				<div class="row">
+					<div class="col-md-4">
+						<img src="service/event4.PNG" alt="event4" class="img-thumbnail">
+						<h4>Milestone Events</h4>
+						<p>Whether it’s an anniversary, reunion or retirement party we’ve got just the plan for your get-together.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="service/event5.PNG" alt="event5" class="img-thumbnail">
+						<h4>Debuts</h4>
+						<p>It’s not every day a girl turns 18! Shower her with love, great food, and one amazing party.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="service/event6.PNG" alt="event6" class="img-thumbnail">
+						<h4>Social Gatherings</h4>
+						<p>From dinner parties to black-tie galas, we do it all. Any event you can think of, we can plan.</p>
+					</div>
+				</div><br><br>
+
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-3">
+						<a href="contact.html" target="block">
+							<button>REQUEST A QUOTE</button>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="menu.html" target="block">
+							<button>PLACE AN ORDER</button>
+						</a>
+					</div>
+					<div class="col-md-3"></div>
+				</div><br>
+
+
+			  	<!-- FOOTER -->
+				<footer>
+					<img src="icon/facebook.png" alt="facebook" class="icon">
+					<img src="icon/twitter.png" alt="twitter" class="icon">
+					<img src="icon/instagram.png" alt="instagram" class="icon">
+					<img src="icon/pinterest.png" alt="pinterest" class="icon">
+					<img src="icon/google.png" alt="google"class="icon">
+				</footer>
+			  
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+  
+</body>
+</html>  
